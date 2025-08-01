@@ -3,6 +3,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup.jsx';
 import Dashboard from './pages/Dashboard';
 import ProjectDetails from './pages/ProjectDetails';
+import ProjectsList from './pages/ProjectsList.jsx';
 import Navbar from './components/Navbar';
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+         <Route path="/projects" element={<ProjectsList />} />
         <Route path="/projects/:id" element={<ProjectDetails />} />
       </Routes>
     </Router>
